@@ -8,4 +8,17 @@ before_install:
 
 script:
   - docker run jibolaolu/docker-seanny npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-2"
+  app: "docker-seanny"
+  env: "DockerSeanny-env"
+  bucket_name: "elasticbeanstalk-eu-west-2-100753669199"
+  bucket_path: "docker-seanny"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+   
   

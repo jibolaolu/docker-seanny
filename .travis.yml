@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+langauge: 
+
+before_install:
+  - docker build -t jibolaolu/docker-seanny -f Dockerfile.Dev .
+
+script:
+  - docker run jibolaolu/docker-seanny npm run test -- --coverage
+  

@@ -4,7 +4,7 @@ services:
 langauge: generic
 
 before_install:
-  - docker build -t jibolaolu/docker-seanny -f Dockerfile.Dev .
+  - docker build -t jibolaolu/docker-seanny -f Dockerfile.dev .
 
 script:
   - docker run jibolaolu/docker-seanny npm run test -- --coverage

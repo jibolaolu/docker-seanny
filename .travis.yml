@@ -1,7 +1,7 @@
 sudo: required
 services:
   - docker
-langauge: 
+langauge: generic
 
 before_install:
   - docker build -t jibolaolu/docker-seanny -f Dockerfile.Dev .

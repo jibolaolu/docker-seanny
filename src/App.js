@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          The name of my app is AyoTee AND HAPPY BIRTHDAY OLAKUNLE ADIOMOWO
+          The name of my app is AyoTee AND LOVE YOU LOADS AYODELE OMOKOGA
         </p>
         <a
           className="App-link"
